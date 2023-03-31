@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>TimeWarp</title>
 </head>
+
 <body>
+    <div class="container bg-light rounded">
+        <div class="d-flex align-items-center mx-auto justify-content-center">
+        <h1 class="mr-3">TimeWarp</h1>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 58 58" xml:space="preserve" fill="#000000" width="50px" height="50px" >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <g>
+                    <path style="fill:#559A92;"
+                        d="M10,29c0-7.966,2.122-15.155,5.529-20.396l-3.435-3.926C7.698,10.808,5,19.371,5,29 c0,9.574,2.668,18.093,7.019,24.215L15.4,49.19C12.07,43.967,10,36.864,10,29z">
+                    </path>
+                    <path style="fill:#559A92;"
+                        d="M45.906,4.679l-3.435,3.926C45.878,13.845,48,21.034,48,29c0,7.864-2.07,14.967-5.4,20.19 l3.381,4.025C50.332,47.093,53,38.574,53,29C53,19.371,50.302,10.808,45.906,4.679z">
+                    </path>
+                </g>
+                <polygon style="fill:#6A78A6;" points="50,0 29,24 8,0 29,0 "></polygon>
+                <polygon style="fill:#D9B24C;" points="16.815,4 41.185,4 29,17.926 "></polygon>
+                <polygon style="fill:#6A78A6;" points="8,58 29,33 50,58 29,58 "></polygon>
+                <polygon style="fill:#D9B24C;" points="16.584,54 29,39.219 41.416,54 "></polygon>
+                <circle style="fill:#804537;" cx="29" cy="49" r="3"></circle>
+                <circle style="fill:#804537;" cx="29" cy="9" r="3"></circle>
+                <rect x="17" y="26" style="fill:#804537;" width="24" height="5"></rect>
+            </g>
+        </svg>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mx-auto mt-2">
+                <div class="form-group">
+                    <h5><label for="velocidad">Velocidad a grabar:</label></h5>
+                    <select class="form-control" id="velocidad" onchange="setVelocidad(this.value)">
+                        <option value="0.25">0.25x</option>
+                        <option value="0.5">0.5x</option>
+                        <option value="0.75">0.75x</option>
+                        <option value="1.25"">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="1.75">1.75x</option>
+                        <option value="2" selected>2x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="form-group">
+                    <h5><label for="minutos-acelerados">Minutos:</label></h5>
+                    <input type="number" class="form-control" id="minutos">
+                </div>
+                <div class="form-group">
+                    <h5><label for="segundos-adicionales">Segundos:</label></h5>
+                    <input type="number" class="form-control mb-4" id="segundos-adicionales"
+                        placeholder="Ingrese segundos adicionales (si los hay)">
+                </div>
+                <button type="button" class="btn btn-primary btn-block mx-auto col-md-8" onclick="calcularMinutosNormales()">Calcular
+                    minutos normales</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
