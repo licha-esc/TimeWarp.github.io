@@ -1,10 +1,12 @@
 # TimeWarp
 
-TimeWarp: convierte minutos acelerados a velocidad normal para grabar tu pantalla.
+· Convierte minutos acelerados a velocidad normal para grabar tu pantalla.
 
-A menudo, queremos grabar clases, tutoriales o juegos en velocidades aceleradas para ahorrar tiempo o verlos más rápidamente. Sin embargo, no siempre sabemos cuántos minutos debemos grabar para lograr la duración deseada del video a velocidad normal. Aquí es donde entra en juego TimeWarp.
+· TimeWarp es un proyecto propio creado desde cero para ayudar a los usuarios al momento de grabar su pantalla.
 
-Por ejemplo, si quieres grabar un video de un minuto (60 segundos) reproduciéndolo a una velocidad dos veces más rápida (2.0x), al usar TimeWarp ingresarías un minuto en la herramienta y obtendrías que necesitas grabar 30 segundos a velocidad normal para lograr la duración de un minuto acelerado.
+· A menudo, queremos grabar clases, tutoriales o juegos en velocidades aceleradas para ahorrar tiempo o verlos más rápidamente. Sin embargo, no siempre sabemos cuántos minutos normales serán los que debemos grabar para lograr la duración deseada. Aquí es donde entra en juego TimeWarp.
+
+· Por ejemplo, necesitas grabar un video de un minuto (60 segundos) pero lo reproduces al doble de velocidad (2.0x). Al usar TimeWarp ingresarías un minuto en la herramienta y obtendrías que necesitas grabar solo 30 segundos a velocidad normal para lograr la duración de un minuto acelerado.
 
 ## Cómo usar
 
