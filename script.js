@@ -1,4 +1,4 @@
-let velocidad = 1;
+let velocidad = 2;
 
 function setVelocidad(v) {
     velocidad = v;
